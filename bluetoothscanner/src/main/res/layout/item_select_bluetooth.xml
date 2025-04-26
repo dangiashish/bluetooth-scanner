@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    style="@style/ClickRipple"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_weight="0"
+        android:id="@+id/ivIcon"
+        android:layout_gravity="center_vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+
+        <TextView
+            android:ellipsize="marquee"
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="14sp"
+            tools:text="Printer001"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:ellipsize="marquee"
+            android:id="@+id/tvMacAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12sp"
+            tools:text="Printer001"
+            android:textStyle="normal"
+            android:alpha="0.8"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/connectedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_weight="0"
+        android:textColor="#43A047"
+        android:text="@string/paired"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

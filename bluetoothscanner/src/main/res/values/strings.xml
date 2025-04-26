@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="request_permission_fail">Failed to obtain permission</string>
+    <string name="paired">Paired</string>
+    <string name="all_device">All devices</string>
+    <string name="refresh">Scan devices</string>
+
+</resources>
