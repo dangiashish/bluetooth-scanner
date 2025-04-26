@@ -29,11 +29,11 @@ android {
         viewBinding = true
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     publishing {
         singleVariant("release") {
@@ -48,7 +48,7 @@ publishing {
         create("release", MavenPublication::class) {
             groupId = "com.github.dangiashish"
             artifactId = "bluetooth-scanner"
-            version = "1.0.0-beta"
+            version = "1.0.1-beta"
 
             afterEvaluate {
                 from(components["release"])
