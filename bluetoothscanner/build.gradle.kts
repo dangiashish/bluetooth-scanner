@@ -48,7 +48,7 @@ publishing {
         create("release", MavenPublication::class) {
             groupId = "com.github.dangiashish"
             artifactId = "bluetooth-scanner"
-            version = "1.0.3"
+            version = "1.0.4"
 
             afterEvaluate {
                 from(components["release"])
